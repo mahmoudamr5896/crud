@@ -6,7 +6,7 @@
         $email = $_POST["email"]; // ahmed@gmail.com
         $phone = $_POST["phone"]; // 123
 
-        $sql = "update students set name = '$name', email = '$email', phone = $phone where id = $id";
+        $sql = "update students set name = '$name', email = '$email', phone = $phone where userid = $id";
         mysqli_query($conncetion, $sql);
         header("Location: index.php");
     }
@@ -14,7 +14,7 @@
     // get data from 
     
     $id  = $_GET["userid"]; // get data from url 
-    $sql = "select * from students where id = $id"; // only one row
+    $sql = "select * from students where userid = $id"; // only one row
     $result = mysqli_query($conncetion, $sql);
     $info = mysqli_fetch_array($result);
     // print_r($info);

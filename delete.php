@@ -8,7 +8,7 @@
     // $username = $_GET["username"];
     // echo $username;
     require_once("config.php");
-    $sql = "delete from students where id = $id ";
+    $sql = "delete from students where userid = $id ";
 
     mysqli_query($conncetion, $sql);
 

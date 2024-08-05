@@ -64,10 +64,10 @@
                 echo "<td>".  $usersInfo["name"]  ."</td>";
                 echo "<td>".  $usersInfo["email"]  ."</td>";
                 echo "<td>".  $usersInfo["phone"]  ."</td>";
-                echo "<td> <a class='p-3' href='delete.php?userid=$usersInfo[id]'>
+                echo "<td> <a class='p-3' href='delete.php?userid=$usersInfo[userid]'>
                 <i class='bi bi-trash3 text-danger'></i> </a> </td>";
                  // send id in the url 
-                echo "<td> <a class='p-3' href='edit.php?userid=$usersInfo[id]'> <i class='bi bi-pencil-square text-warning'></i> </a> </td>";
+                echo "<td> <a class='p-3' href='edit.php?userid=$usersInfo[userid]'> <i class='bi bi-pencil-square text-warning'></i> </a> </td>";
                 echo "</tr>";
             }
             ?>
